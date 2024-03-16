@@ -1,4 +1,4 @@
-import React from 'react' //may not need this
+// import React from 'react' //may not need this
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
@@ -42,6 +42,6 @@ const router = createBrowserRouter([
 ]);
 
 
-ReactDom.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );

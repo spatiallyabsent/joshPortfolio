@@ -1,7 +1,7 @@
-import { useRouterError } from 'react-router-dom';
+import { useRouteError } from 'react-router-dom';
 // used example from 20-React/23-Ins_React-Router
 export default function ErrorPage() {
-    const { error } = useRouterError();
+    const { error } = useRouteError();
     return (
         <div id="error-page">
             <h1>Error</h1>
