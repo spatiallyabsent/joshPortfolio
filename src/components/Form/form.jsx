@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { validateEmail } from '../../utils/helpers';
 //used 20-React/16-Stu_React-Forms as a reference
 //may need to add an onmount useEffect to clear the form
 const Form = () => {
@@ -8,23 +9,21 @@ const Form = () => {
     const [errorMessages, setErrorMessages] = useState('');
 
     const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
-
-        if (inputType === 'name') {
-            setUserName(inputValue);
-        } else if (inputType === 'email') {
-            setUserEmail(inputValue);
+        const { name, value } = e.target;
+        if (name === 'userName') {
+            setUserName(value);
+        } else if (name === 'userEmail') {
+            setUserEmail(value);
         } else {
-            setUserMessage(inputValue);
+            setUserMessage(value);
         }
     };
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        if (!userName || !userEmail || !userMessage) {
+        if (!userName || !validateEmail(userEmail) || !userMessage) {
             setErrorMessages('Please fill out all fields');
+            return;
         } else {
             setErrorMessages('');
             setUserName('');
