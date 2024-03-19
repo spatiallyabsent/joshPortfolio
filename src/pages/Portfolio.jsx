@@ -37,17 +37,21 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <div>
-            <h1>Portfolio</h1>
-            {projects.map((project, index) => (
-                <div key={index} className="project">
-                    <h2>{project.title}</h2>
-                    <img src={project.image} alt={project.title} />
-                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <FaGithub size={30}/>
-                    </a>
-                </div>
-            ))}
+        <div className="portfolio-container">
+            <h1 className="portfolio-heading">Portfolio</h1>
+            <div className="port-images">
+                {projects.map((project, index) => (
+                    <div key={index} className="project">
+                        <h2>{project.title}</h2>
+                        <div className="image-container">
+                            <img src={project.image} alt={project.title} />
+                        </div>
+                        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            <FaGithub size={30}/>
+                        </a>
+                    </div>
+                ))}
+            </div>
         </div>
     );
 }
