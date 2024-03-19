@@ -1,6 +1,10 @@
+import React from 'react';
+import profilePic from '../../public/profpicc.jpg';
+
 export default function About() {
     return (
         <div>
+            <img src={profilePic} alt="profile" />
             <h1>About</h1>
             <p>
                 Hello! My name is Joshua and I'm a web developer who finds passion in learning online technologies. 
