@@ -24,12 +24,12 @@ const projects = [
         },
         {
             title: 'Coming soon',
-            image: 'public/underconstruction.jpg', 
+            image: 'underconstruction.jpg', 
             githubLink: 'https://github.com/spatiallyabsent'
         },
         {
             title: 'Coming soon',
-            image: 'public/underconstruction.jpg', 
+            image: 'underconstruction.jpg', 
             githubLink: 'https://github.com/spatiallyabsent'
         },
 
