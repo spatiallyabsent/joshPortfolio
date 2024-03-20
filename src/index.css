@@ -1,6 +1,7 @@
 .about {
     display: flex;
     flex-wrap: wrap;
+    background-color: antiquewhite;
 }
 .about .img-container {
     flex-basis: 30%;
@@ -68,4 +69,9 @@
 
 .social-icons a:hover {
     color: #ccc; /* Icon color on hover */
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
 }
