@@ -1,8 +1,46 @@
-# React + Vite
+A Good README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# <Josh Portfolio>
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple portfolio meant to show proficiency, projects, and passions.
+
+## Table of Contents (Optional)
+
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+
+
+## Installation
+
+It is a front end application only need to download from github https://github.com/spatiallyabsent/joshPortfolio, npm install, npm run start
+
+## Usage
+
+A simple front end application using REACT and vite
+
+## Credits
+
+https://github.com/spatiallyabsent
+
+## License
+
+none
+
+
+
+## Features
+
+React and Vite
+
+## How to Contribute
+
+No need to contribute
+
+## Tests
+
+No official testing.
+
