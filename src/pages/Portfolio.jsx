@@ -4,32 +4,32 @@ import React from "react";
 const projects = [
         {
             title: 'Daily Planner',
-            image: 'public/dailydashboard.png', 
+            image: '../../public/dailydashboard.jpg', 
             githubLink: 'https://github.com/S10skeleton/Project-1-G5'
         },
         {
             title: 'company database',
-            image: '../../public/company-databaseimg.png', 
+            image: '../../public/company-databaseimg.jpg', 
             githubLink: 'https://github.com/spatiallyabsent/employee-tracker/tree/main'
         },
         {
             title: 'PWA Text Editor',
-            image: '../../public/PWAtextimage.png', 
+            image: '../../public/PWAtextimage.jpg', 
             githubLink: 'https://github.com/spatiallyabsent/PWAtexteditor'
         },
         {
             title: 'ReadMe Generator',
-            image: '../../public/readmegenimage.png',
+            image: '../../public/readmegenimage.jpg',
             githubLink: 'https://github.com/spatiallyabsent/readmegenerator'
         },
         {
             title: 'Coming soon',
-            image: '../../public/underconstruction.png', 
+            image: '../../public/underconstruction.jpg', 
             githubLink: 'https://github.com/spatiallyabsent'
         },
         {
             title: 'Coming soon',
-            image: '../../public/underconstruction.png', 
+            image: '../../public/underconstruction.jpg', 
             githubLink: 'https://github.com/spatiallyabsent'
         },
 
