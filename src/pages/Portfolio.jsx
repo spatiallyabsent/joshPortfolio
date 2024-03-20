@@ -4,7 +4,7 @@ import React from "react";
 const projects = [
         {
             title: 'Daily Planner',
-            image: '../../public/dailydashboard.png', 
+            image: 'public/dailydashboard.png', 
             githubLink: 'https://github.com/S10skeleton/Project-1-G5'
         },
         {
