@@ -6,7 +6,7 @@ export default function Resume() {
             const fileURL = URL.createObjectURL(blob);
              //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
             let alink = document.createElement("a");
-            alink.href = fileURL, '_blank';
+            alink.href = fileURL;
             alink.download = "JoshuaDowResume.pdf";
             alink.click(); 
           });
