@@ -39,15 +39,18 @@ function Contact() {
   return (
     <Form onSubmit={handleFormSubmit}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>name</Form.Label>
+        <div>
+          <h2>Contact Form Under Construction. Please use EMAIL Icon to get in touch with me.</h2>
+        </div>
+        <Form.Label>Name</Form.Label>
         <Form.Control name="userName" value={userName} onChange={handleInputChange} type="text" placeholder="Your name here" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Email address</Form.Label>
+        <Form.Label>Email Address</Form.Label>
         <Form.Control type="email" placeholder="name@example.com" name="userEmail" value={userEmail} onChange={handleInputChange}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>message</Form.Label>
+        <Form.Label>Message</Form.Label>
         <Form.Control as="textarea" rows={3} name="userMessage" value={userMessage} onChange={handleInputChange} />
       </Form.Group>
       {errorMessages && (

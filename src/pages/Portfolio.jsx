@@ -23,9 +23,9 @@ const projects = [
             githubLink: 'https://github.com/spatiallyabsent/readmegenerator'
         },
         {
-            title: 'Coming soon',
-            image: 'underconstruction.jpg', 
-            githubLink: 'https://github.com/spatiallyabsent'
+            title: 'Piedmont Website',
+            image: 'piedmontmenu.jpg', 
+            githubLink: 'https://github.com/Agerian/restaurantMenu'
         },
         {
             title: 'Coming soon',
@@ -47,7 +47,7 @@ export default function Portfolio() {
                             <img src={project.image} alt={project.title} />
                         </div>
                         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                            <FaGithub size={30}/>
+                            <FaGithub size={50}/>
                         </a>
                     </div>
                 ))}

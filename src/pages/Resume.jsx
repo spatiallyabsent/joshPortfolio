@@ -1,4 +1,4 @@
-import PDF from "../assets/fakeresume.pdf";// need to change name once full resume is created
+import PDF from "../assets/JoshResume.pdf";// need to change name once full resume is created
 export default function Resume() {
     const handleDownload = () => {
         fetch(PDF).then((response) => {
@@ -7,7 +7,7 @@ export default function Resume() {
              //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
             let alink = document.createElement("a");
             alink.href = fileURL;
-            alink.download = "fakeresume.pdf";
+            alink.download = "JoshResume.pdf";
             alink.click(); 
           });
         });
@@ -15,7 +15,7 @@ export default function Resume() {
 
     return (
         <div>
-            <a href="resume" onClick={handleDownload}>Download Resume</a>
+            <a href="resume" onClick={handleDownload} className="download-link">Download Resume</a>
             <h1>Resume</h1>
             <h2>Front End Technologies</h2>
             <ul>
@@ -33,8 +33,9 @@ export default function Resume() {
                 <li>Express.js</li>
                 <li>MySQL</li>
                 <li>MongoDB</li>
+                <li>JSON WebTokens</li>
             </ul>
-            <h2>Other</h2>
+            <h2>Other Technologies</h2>
             <ul>
                 <li>GitHub</li>
                 <li>Heroku</li>
@@ -42,6 +43,14 @@ export default function Resume() {
                 <li>Insomnia</li>
                 <li>Render</li>
             </ul>
+            <h2>Management</h2>
+                <li>Employee Training</li>
+                <li>Route Training</li>
+                <li>Hiring, Firing, Employee Reviews</li>
+                <li>Scheduling</li>
+                <li>Store Inspections</li>
+                <li>Quality Control</li>
+                <li>Customer Retention Strategies</li>
         </div>
     );
 }

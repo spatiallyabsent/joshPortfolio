@@ -17,11 +17,25 @@
     height: 100%;
     object-fit: cover;
 }
+/* for Resume */
+.download-link {
+    font-size: 44px; 
+    font-weight: bold; 
+    color: #007BFF; 
+    text-decoration: none; 
+}
+
+.download-link:hover {
+    color: #f60d05;
+    text-decoration: underline; 
+}
+
 /* for portfolio */
 .portfolio-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 80px 20px 80px;
 }
 
 .portfolio-heading {
@@ -49,10 +63,10 @@
 }
 /* for footers */
 .footer {
-    background-color: #333; /* Background color of the footer */
-    color: #fff; /* Text color */
-    padding: 20px 0; /* Adjust padding as needed */
-    text-align: center; /* Center align the content */
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
 }
 
 .social-icons {
@@ -62,13 +76,13 @@
 
 .social-icons a {
     color: #fff; /* Icon color */
-    font-size: 24px; /* Adjust icon size as needed */
-    margin: 0 10px; /* Adjust margin between icons */
+    font-size: 30px; 
+    margin: 0 10px; 
     text-decoration: none; /* Remove underline */
 }
 
 .social-icons a:hover {
-    color: #ccc; /* Icon color on hover */
+    color: #ccc; 
 }
 .form {
     display: flex;
