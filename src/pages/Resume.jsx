@@ -1,4 +1,4 @@
-import PDF from "../assets/JoshResume.pdf";
+import PDF from "../assets/JoshuaDowResume.pdf";
 export default function Resume() {
     const handleDownload = () => {
         fetch(PDF).then((response) => {
@@ -7,7 +7,7 @@ export default function Resume() {
              //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
             let alink = document.createElement("a");
             alink.href = fileURL;
-            alink.download = "JoshResume.pdf";
+            alink.download = "JoshuaDowResume.pdf";
             alink.click(); 
           });
         });
