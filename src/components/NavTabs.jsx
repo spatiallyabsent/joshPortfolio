@@ -7,13 +7,6 @@ function NavTabs() {
         <ul className="nav nav-tabs" style={{ backgroundColor: "lightblue" }}>
             <li className="nav-item">
                 <Link
-                    to="/"
-                    className={currentPage === "/" ? "nav-link active" : "nav-link"}
-                >
-                </Link>
-            </li>
-            <li className="nav-item">
-                <Link
                     to="/About"
                     className={currentPage === "/About" ? "nav-link active" : "nav-link"}
                 >

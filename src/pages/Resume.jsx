@@ -1,4 +1,4 @@
-import PDF from "../assets/JoshResume.pdf";// need to change name once full resume is created
+import PDF from "../assets/JoshResume.pdf";
 export default function Resume() {
     const handleDownload = () => {
         fetch(PDF).then((response) => {
