@@ -1,6 +1,7 @@
-// import PDF from "../assets/JoshuaDowResume.pdf";
+
 export default function Resume() {
     const handleDownload = () => {
+        event.preventDefault();//added
         fetch('/JoshuaDowResume.pdf').then((response) => {
             if (!response.ok) {
                 throw new Error('Network error');
@@ -14,7 +15,9 @@ export default function Resume() {
             let alink = document.createElement("a");
             alink.href = fileURL;
             alink.download = "JoshuaDowResume.pdf";
-            alink.click(); 
+            document.body.appendChild(alink);//added
+            alink.click();
+            document.body.removeChild(alink);//added
           })
           .catch((error) => {
             console.error('There was an error with the fetch operation:', error);
