@@ -15,7 +15,7 @@ export default function Resume() {
 
     return (
         <div>
-            <a href="Resume" onClick={handleDownload} className="download-link">Download Resume</a>
+            <a href="/JoshuaDowResume.pdf" onClick={handleDownload} className="download-link">Download Resume</a>
             <h1>Resume</h1>
             <h2>Front End Technologies</h2>
             <ul>
