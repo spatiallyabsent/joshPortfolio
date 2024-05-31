@@ -2,15 +2,23 @@
 export default function Resume() {
     const handleDownload = () => {
         fetch('/JoshuaDowResume.pdf').then((response) => {
-          response.blob().then((blob) => {
+            if (!response.ok) {
+                throw new Error('Network error');
+            }
+            return response.blob ();
+        })
+        .then ((blob) => {
             const fileURL = URL.createObjectURL(blob);
-             //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
+            window.open(fileURL, '_blank');
+            
             let alink = document.createElement("a");
             alink.href = fileURL;
             alink.download = "JoshuaDowResume.pdf";
             alink.click(); 
+          })
+          .catch((error) => {
+            console.error('There was an error with the fetch operation:', error);
           });
-        });
       };
 
     return (
