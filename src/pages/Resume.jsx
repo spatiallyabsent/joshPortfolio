@@ -1,7 +1,7 @@
-import PDF from "../assets/JoshuaDowResume.pdf";
+// import PDF from "../assets/JoshuaDowResume.pdf";
 export default function Resume() {
     const handleDownload = () => {
-        fetch(PDF).then((response) => {
+        fetch('/JoshuaDowResume.pdf').then((response) => {
           response.blob().then((blob) => {
             const fileURL = URL.createObjectURL(blob);
              //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
