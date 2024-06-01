@@ -2,7 +2,7 @@
 export default function Resume() {
     const handleDownload = () => {
         event.preventDefault();//added
-        fetch('/JoshuaDowResume.pdf').then((response) => {
+        fetch('/JoshuaResume.pdf').then((response) => {
             if (!response.ok) {
                 throw new Error('Network error');
             }
@@ -14,7 +14,7 @@ export default function Resume() {
             
             let alink = document.createElement("a");
             alink.href = fileURL;
-            alink.download = "JoshuaDowResume.pdf";
+            alink.download = "JoshuaResume.pdf";
             document.body.appendChild(alink);//added
             alink.click();
             document.body.removeChild(alink);//added
@@ -26,7 +26,7 @@ export default function Resume() {
 
     return (
         <div>
-            <a href="/JoshuaDowResume.pdf" onClick={handleDownload} className="download-link">Download Resume</a>
+            <a href="/JoshuaResume.pdf" onClick={handleDownload} className="download-link">Download Resume</a>
             <h1>Resume</h1>
             <h2>Front End Technologies</h2>
             <ul>
